@@ -802,6 +802,11 @@ properly.
 	text-align: center !important;
 }
 
+#place {
+   margin-top: -22px;
+   margin-bottom: 15px;
+}
+
 
 
 
