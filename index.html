@@ -17,14 +17,24 @@
        the_height;
       }
    </script>
+   <script>
+     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+     ga('create', 'UA-64634122-1', 'auto');
+     ga('send', 'pageview');
+
+   </script>
 
 
    <!--- Basic Page Needs
    ================================================== -->
    <meta charset="utf-8">
    <title>Youssef Ibrahim</title>
-   <meta name="description" content="">
-   <meta name="author" content="">
+   <meta name="description" content="Personal Website">
+   <meta name="author" content="Youssef M. Ibrahim">
 
    <!-- Mobile Specific Metas
    ================================================== -->
@@ -56,14 +66,14 @@
 
       <nav id="nav-wrap">
 
-         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-         <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+         <a class="mobile-btn" href="#nav-wrap" style="right: 0px;" title="Show navigation">Show navigation</a>
+         <a class="mobile-btn" href="#" style="right: 0px;" title="Hide navigation">Hide navigation</a>
 
          <ul id="nav" class="nav">
             <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
             <li><a class="smoothscroll" href="#about">About</a></li>
             <li><a class="smoothscroll" href="#resume">Resume</a></li>
-            <li><a class="smoothscroll" href="#portfolio">Works</a></li>
+            <!-- <li><a class="smoothscroll" href="#portfolio">Works</a></li> -->
             <li><a class="smoothscroll" href="#testimonials">Testimonials</a></li>
             <li><a class="smoothscroll" href="#contact">Contact</a></li>
          </ul> <!-- end #nav -->
@@ -108,9 +118,9 @@
 
             <h2>About Me</h2>
 
-            <p align="justify">I am a 21 year old student, studying Electrical Engineering at the University of Waterloo in Canada. Previous to university, I had began minmal programming throughout high school, allowing me to learn scripting languages and implementing them to create basic functional programs. When I had reached university, I then began to learn object-oriented programming throughout my curriculum and grew an interest in pursuing a job to apply my growing knowledge. With personal projects and work experience, I have found that my love for software has continued to grow exponentially and refused to stop. </p>
-            <p align="justify">
-            Continously learning new technologies is difficult as I want to pursue my Electrical Engineering degree, but also require growing knowledge of software to pursue my career interests. Much of my software knowledge today is therefore self-taught through projects or my past experiences and continues to be done this way.
+            <p id="p">I am a 21 year old student, studying Electrical Engineering at the University of Waterloo in Canada. Previous to university, I had initially started programming during high school, allowing me to be exposed to scripting languages and implementing basic functional programs. When I had reached university, I then began to learn object-oriented programming throughout my curriculum and grew an interest in pursuing a job to apply my growing knowledge. With personal projects and work experience, I have found that my love for software has continued to grow at an order of O(n<sup>3</sup>) and refused to stop.</p>
+            <p id="p">
+            Continously learning new technologies is difficult as I want to pursue my Electrical Engineering degree, but also require growing knowledge of software to pursue my career interests. Much of my software knowledge today is therefore self-taught through projects or my past experiences and I continue to learn this way.
             </p>
 
             <div class="row">
@@ -149,15 +159,16 @@
                <div class="twelve columns">
 
                   <h3>University of Waterloo</h3>
-                  <p class="info">B.A.Sc in Electrical Engineering <span>&bull;</span> <em class="date">Present</em></p>
+                  <p class="info">B.A.Sc in Electrical Engineering</p>
+                  <p class="date"><mark><strong>Present</strong></mark></p>
 
-                  <p align="justify">
-                  While majoring in Electrical Engineering at the University of Waterloo, I have been given the opportunity to broaden my academic spectrum by not only learning in accordance to my major but major of Computer Engineering as well. Having the capability to take courses not in path with my major has given me the opportunity to take courses such as data structures and algorithms (<a href="https://ece.uwaterloo.ca/~dwharder/aads/Outline/">ECE 250</a>) allowing me to grow my interest within development continously.
+                  <p id="p">
+                  While majoring in Electrical Engineering at the University of Waterloo, I have been given the opportunity to broaden my academic spectrum by not only learning in accordance to my major but the major of Computer Engineering as well. Having the capability to take courses in Computer Engineering has given me the opportunity to take courses such as data structures and algorithms (<a href="https://ece.uwaterloo.ca/~dwharder/aads/Outline/">ECE 250</a>) allowing me to grow my interest within development continously.
                   </p>
 
                </div>
                   
-               <iframe id="the_iframe" width="100%" src="list.html" onLoad="calcHeight();" height='270px' background-color="white"frameborder="0"></iframe>
+               <iframe id="the_iframe" width="100%" src="list.html" onLoad="calcHeight();" style="overflow: auto; -webkit-overflow-scrolling:touch;"height='270px' background-color="white"frameborder="0"></iframe>
 
             </div> <!-- item end -->
 
@@ -182,11 +193,12 @@
 
                <div class="twelve columns">
 
-                  <h3><a href="http://www.amplify.com/">Amplify Education</a></h3>
-                  <p class="info">Software Developer <span>&bull;</span> <em class="date">September - December 2014</em></p>
+                  <h3><a class="company" href="http://www.amplify.com/">Amplify Education</a></h3>
+                  <p class="info">Software Developer </p>
+                  <p class="date">September - December 2014</p>
                   <p id="place"> New York City, New York </p>
-                  <p align="justify">
-                  Throughout this co-op experience, I was put in charge of multiple tasks which included but were not limited to; restructuring and creating new Selenium tests for a web app, as well as producing python scripts to retrieve and edit student data according to business intelligence. While readjusting, analyzing and creating new data, I was able to enhance my data analysis and data management knowledge with the use of minor SQL and production of scripts, which some of which are still used today within the company.
+                  <p id="p">
+                  Throughout this co-op experience, I was put in charge of multiple tasks which included but were not limited to; restructuring and creating new Selenium tests for a web app, as well as producing python scripts to retrieve and edit student data according to business intelligence. While readjusting, analyzing and creating new data, I was able to enhance my data analysis and data management knowledge with the use of minor SQL and production of scripts.
                   </p>
                </div>
 
@@ -196,22 +208,24 @@
 
                <div class="twelve columns">
 
-                  <h3><a href="http://barrowts.com/">Barrow Technology Solutions</a></h3>
-                  <p class="info">Technology Operations Consultant <span>&bull;</span> <em class="date">January - April 2014</em></p>
+                  <h3><a class="company" href="http://barrowts.com/">Barrow Technology Solutions</a></h3>
+                  <p class="info">Technology Operations Consultant</p>  
+                  <p class="date">January - April 2014</p>
                   <p id="place">Toronto, Ontario</p>
-                  <p align="justify">
-                  As Barrow Technology Solutions was a startup engaged in <a href="http://www.sap.com/canada/index.html">SAP</a> Process Integration, this position was focused on both technical and business aspects of the company. Technically I aided in the advencments of basic SAP architecture, maintained the company website, as well as produced an internal web site with authentication for contractors. The internal website was implemented for contractors to stay up to date with on-going projects as well as to be informed of new technical updates. On the business aspect I was required to expand the company by creating product and services documentation, improve online presence on LinkedIn, and reach out to potential partners as well as future clients. 
+                  <p id="p">
+                  Barrow Technology Solutions is a startup engaged in <a href="http://www.sap.com/canada/index.html">SAP</a> Process Integration. This position was focused on both technical and business aspects of the company. Technically, I aided in the advencments of basic SAP architecture, maintained the company website, as well as produced an internal website with authentication for contractors. The internal website was implemented for contractors to stay up to date with on-going projects as well as to be informed of new technical updates. On the business aspect, I was required to expand the company by creating product and services documentation, improve online presence on LinkedIn, and reach out to potential partners as well as future clients. 
                   </p>
 
                </div>
 
                <div class="twelve columns">
 
-                  <h3><a href="http://www.canadiantire.ca/en.html">Canadian Tire Inc.</a></h3>
-                  <p class="info">Retail Process Analyst <span>&bull;</span> <em class="date">June - August 2013</em></p>
+                  <h3><a class="company" href="http://www.canadiantire.ca/en.html">Canadian Tire Inc.</a></h3>
+                  <p class="info">Retail Process Analyst </p>
+                  <p class="date">June - August 2013</p>
                   <p id="place">Toronto, Ontario</p>
-                  <p align="justify">
-                  With previous experience working on the sales floor of a local Canadian Tire store, I was placed in charge of the new replenishment software design which would be used by Canadian Tire employees across 200 stores. This co-op was split into three parts; initially gathering research data, secondly produce a conceptual design, and lastly beta test the software with multiple stores. As I aided in the design, I produced multiple presentations which were demonstrated to the Technology Committee at the Canadian Tire Corporation headquarters. After finalizing the design with the committee, I was then able to test, and support multiple stores in beta testing the software to reach it's current design.
+                  <p id="p">
+                  With previous experience working on the sales floor of a local Canadian Tire store, I was placed in charge of designing the new replenishment software later used by Canadian Tire employees across 200 stores. This co-op was split into three parts; initially gathering research data, secondly produce a conceptual design, and lastly beta test the software with multiple stores. As I aided in the design, I created multiple presentations which were showcased to the Technology Committee at the Canadian Tire Corporation headquarters. After finalizing the design with the committee, I was then able to support multiple stores in beta testing the software to reach its current design.
                   </p>
 
                </div>
@@ -219,11 +233,12 @@
 
                <div class="twelve columns">
 
-                  <h3>Thru Frame Studios</h3>
-                  <p class="info">Co-Founder & Manager of Operations <span>&bull;</span> <em class="date">March - August 2013</em></p>
+                  <h3 class="company">Thru Frame Studios</h3>
+                  <p class="info">Co-Founder & Manager of Operations</p>
+                  <p class="date">March - August 2013</p>
                   <p id="place">Toronto, Ontario</p>
-                  <p align="justify">
-                  Thru Frame Studios was co-founded by my brother and myself as a photography business working within Hamilton and Toronto regions. Due to photography being a large hobby of ours, we had decided to pursue it into a business. Initially working with small projects such as producing professional LinkedIn photos for students, we were able to produce a large enough portfolio allowing us to work with larger clients. One of the larger clients throughout my time at the company had requested weekly photoshoots as well as marketing material for events. I unfortunaly was forced to leave the company due to academic reasons, but Thru Studios is still on going and is run by my brother <a href="http://www.hanymdibrahim.com/">Hany</a>.
+                  <p id="p">
+                  Thru Frame Studios was co-founded by my brother and I as a photography business working within Hamilton and Toronto regions. As we shared a passion in photography, we decided to take our common interest and develop a business. Initially working with small projects such as producing professional LinkedIn photos for students, we were able to produce a sizeable portfolio allowing us to work with larger clients. One of the more established clients throughout my time at the company had requested weekly photoshoots as well as marketing material for events. Thru Studios is still ongoing and is run by my brother <a href="http://www.hanymdibrahim.com/">Hany</a>.
                   </p>
 
                </div>
@@ -251,9 +266,9 @@
                   <li><span class="bar-expand python"></span><em>Python</em></li>
                   <li><span class="bar-expand cpp"></span><em>C++</em></li>
                   <li><span class="bar-expand java"></span><em>Java</em></li>
-                  <li><span class="bar-expand illustrator"></span><em>Illustrator</em></li>
                   <li><span class="bar-expand htmlcss"></span><em>HTML5/CSS3</em></li>
                   <li><span class="bar-expand git"></span><em>GitHub</em></li>
+                  <li><span class="bar-expand illustrator"></span><em>Illustrator</em></li>
                </ul>
 
             </div><!-- end skill-bars -->
@@ -267,7 +282,7 @@
 
    <!-- Portfolio Section
    ================================================== -->
-   <section id="portfolio">
+<!-- <!-- <!-- <!-- <!-- <!-- <!-- <!-- <!-- <!--    <section id="portfolio">
 
       <div class="row">
 
@@ -276,8 +291,8 @@
             <h1>Check Out Some of My Works.</h1>
 
             <!-- portfolio-wrapper -->
-            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
-
+ <!--           <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
+<!--
                <div class="columns portfolio-item">
                   <div class="item-wrap">
 
@@ -294,7 +309,7 @@
 
                   </div>
                </div> <!-- item end -->
-
+<!--
                <div class="columns portfolio-item">
                   <div class="item-wrap">
 
@@ -311,7 +326,7 @@
 
                   </div>
                </div> <!-- item end -->
-
+<!--
                <div class="columns portfolio-item">
                   <div class="item-wrap">
 
@@ -328,10 +343,10 @@
 
                   </div>
                </div> <!-- item end -->
-
+<!--
                <div class="columns portfolio-item">
                   <div class="item-wrap">
-
+<!--
                      <a href="#modal-04" title="">
                         <img alt="" src="images/portfolio/into-the-light.jpg">
                         <div class="overlay">
@@ -345,7 +360,7 @@
 
                   </div>
                </div> <!-- item end -->
-
+<!--
                <div class="columns portfolio-item">
                   <div class="item-wrap">
 
@@ -362,7 +377,7 @@
 
                   </div>
                </div> <!-- item end -->
-
+<!--
                <div class="columns portfolio-item">
                   <div class="item-wrap">
 
@@ -379,7 +394,7 @@
 
                   </div>
                </div> <!-- item end -->
-
+<!--
                <div class="columns portfolio-item">
                   <div class="item-wrap">
 
@@ -396,7 +411,7 @@
 
                   </div>
                </div> <!-- item end -->
-
+<!--
                <div class="columns portfolio-item">
                   <div class="item-wrap">
 
@@ -413,15 +428,15 @@
 
                   </div>
                </div>  <!-- item end -->
-
+<!--
             </div> <!-- portfolio-wrapper end -->
-
+<!--
          </div> <!-- twelve columns end -->
 
 
          <!-- Modal Popup
          --------------------------------------------------------------- -->
-
+<!--
          <div id="modal-01" class="popup-modal mfp-hide">
 
             <img class="scale-with-grid" src="images/portfolio/modals/m-coffee.jpg" alt="" />
@@ -438,7 +453,7 @@
             </div>
 
          </div><!-- modal-01 End -->
-
+<!--
          <div id="modal-02" class="popup-modal mfp-hide">
 
             <img class="scale-with-grid" src="images/portfolio/modals/m-console.jpg" alt="" />
@@ -455,7 +470,7 @@
             </div>
 
          </div><!-- modal-02 End -->
-
+<!--
          <div id="modal-03" class="popup-modal mfp-hide">
 
             <img class="scale-with-grid" src="images/portfolio/modals/m-judah.jpg" alt="" />
@@ -472,7 +487,7 @@
             </div>
 
          </div><!-- modal-03 End -->
-
+<!--
          <div id="modal-04" class="popup-modal mfp-hide">
 
             <img class="scale-with-grid" src="images/portfolio/modals/m-intothelight.jpg" alt="" />
@@ -489,7 +504,7 @@
             </div>
 
          </div><!-- modal-04 End -->
-
+<!--
          <div id="modal-05" class="popup-modal mfp-hide">
 
             <img class="scale-with-grid" src="images/portfolio/modals/m-farmerboy.jpg" alt="" />
@@ -506,7 +521,7 @@
             </div>
 
          </div><!-- modal-05 End -->
-
+<!--
          <div id="modal-06" class="popup-modal mfp-hide">
 
             <img class="scale-with-grid" src="images/portfolio/modals/m-girl.jpg" alt="" />
@@ -523,7 +538,7 @@
             </div>
 
          </div><!-- modal-06 End -->
-
+<!--
          <div id="modal-07" class="popup-modal mfp-hide">
 
             <img class="scale-with-grid" src="images/portfolio/modals/m-origami.jpg" alt="" />
@@ -541,7 +556,7 @@
 
          </div><!-- modal-07 End -->
 
-         <div id="modal-08" class="popup-modal mfp-hide">
+<!--          <div id="modal-08" class="popup-modal mfp-hide">
 
             <img class="scale-with-grid" src="images/portfolio/modals/m-retrocam.jpg" alt="" />
 
@@ -559,10 +574,9 @@
          </div><!-- modal-01 End -->
 
 
-      </div> <!-- row End -->
+  <!--    </div> <!-- row End -->
 
-   </section> <!-- Portfolio Section End-->
-
+ <!--  </section> <!-- Portfolio Section End-->
 
    <!-- Testimonials Section
    ================================================== -->
@@ -574,7 +588,7 @@
 
             <div class="two columns header-col">
 
-               <h1><span>Client Testimonials</span></h1>
+               <h1><span>Testimonials</span></h1>
 
             </div>
 
@@ -618,33 +632,26 @@
    <h2 class="hcontact">Contact</h2>
          <div class="row section-head">
 
-            <div class="container">
+         <div class="row">
 
-                  <div class="leftcol">
+            <div align="center"  id="leftcol" class="six columns">
                      <ul>
                         <li><a href="mailto:youssefibrahim@gmail.com" class="fa fa-envelope"> Email</a></li>
                         <li><a href="https://github.com/youssefibrahim" class="fa fa-github-square"> Github</a></li>
                         <li><a href="https://ca.linkedin.com/in/youssefmibrahim" class="fa fa-linkedin"> LinkedIn</a></li>
                      </ul>
-                  </div>
-                  <div class="rightcol">
+            </div>   
+            
+            <div align="center" id= "rightcol" class="six columns">
                      <ul>
                         <li><a href="https://www.facebook.com/youssef.medhat" class="fa fa-facebook"> Facebook</a></li>
                         <li><a href="https://twitter.com/youssefmibrahim" class="fa fa-twitter"> Twitter</a></li>
                         <li><a href="https://instagram.com/ymedhat/" class="fa fa-instagram"> Instagram</a></li>
                      </ul>
-                  </div>
-            </div>
+            </div>     
+
 
          </div>
-
-         <div class="row">
-
-            <div class="eight columns">
-
-               </div>
-
-            </div>
 
       </div>
 

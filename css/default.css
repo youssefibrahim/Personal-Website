@@ -380,7 +380,7 @@ dd { margin: 0 0 0 20px; }
 }
 .lining dd:before {
 	content: ": ";
-	margin-left: -0.2em;
+	/*margin-left: -0.2em;*/
 }
 
 /* Dictionary Definition Style Markup */
@@ -390,7 +390,7 @@ dd { margin: 0 0 0 20px; }
 }
 .dictionary-style dt + dt:before {
 	content: ", ";
-	margin-left: -0.2em;
+	/*margin-left: -0.2em;*/
 }
 .dictionary-style dd {
 	display: block;
@@ -755,7 +755,7 @@ properly.
 --------------------------------------------------------------- */
 @media only screen and (max-width: 460px) {
 
-   .row { width: auto; }
+   .row { width: 100%; }
 
 }
 
