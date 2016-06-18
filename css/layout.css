@@ -1007,6 +1007,7 @@ sup {font-size: small; vertical-align:super;}
   #p {text-align: justify;}
   #rightcol {text-align: right}
   #leftcol {text-align: left}
+  #centercol {text-align: center}
   #testimonials {height: 500px !important;}
 }
 
@@ -1029,13 +1030,7 @@ mark {
   color: black;
 }
 
-.scroll-wrapper {
-  -webkit-overflow-scrolling: touch;
-    overflow-y: scroll;
-
-  /* important:  dimensions or positioning here! */
-}
-
-.scroll-wrapper iframe {
-  /* nada! */
+.iframe-container {
+    overflow:scroll !important;
+    -webkit-overflow-scrolling:touch !important;
 }
